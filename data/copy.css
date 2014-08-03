@@ -1,0 +1,7 @@
+a.stack {
+    border-bottom: 2px dashed #8b4513;
+}
+
+a.stack:hover {
+    text-decoration: none;
+}
