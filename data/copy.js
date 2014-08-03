@@ -13,11 +13,11 @@ $(document).ready(function () {
     };
 
     var linkReplacer = function (match) {
-        return '<a href="#" class="stack">' + match + '</a>';
+        return '<span class="stack">' + match + '</span>';
     };
 
-    $("*").highlight("google", linkReplacer);
-    $("a.stack").click(function () {
+    $("*").highlight("[a-z]+\.java:[0-9]+", linkReplacer);
+    $("span.stack").click(function (e) {
         self.port.emit("clicked", $(this).text());
     })
 });
