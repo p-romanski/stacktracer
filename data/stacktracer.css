@@ -1,10 +1,10 @@
-.stack {
+.stack-tracer {
     border: 1px dashed #8b4513;
     padding: 3px;
     margin: 3px;
     cursor: pointer;
 }
 
-.stack:hover {
+.stack-tracer:hover {
     text-decoration: none;
 }
