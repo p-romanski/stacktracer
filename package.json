@@ -1,9 +1,23 @@
 {
-  "name": "stacktracer",
-  "title": "StackTraceR",
-  "id": "jid1-e14t71nLbc7tqA",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
-  "version": "0.1"
+    "name": "stacktracer",
+    "title": "StackTraceR",
+    "id": "pl.pirosoft.stacktracer",
+    "description": "This addon helps find source code for stack traces",
+    "author": "promanski",
+    "license": "MPL 2.0",
+    "version": "0.1",
+    "preferences": [
+        {
+            "name": "domain",
+            "type": "string",
+            "title": "Where to look for stacktraces?",
+            "value": ".*jenkins.*"
+        },
+        {
+            "name": "filePattern",
+            "type": "string",
+            "title": "File pattern",
+            "value": "[a-z0-9_]+[.](java|rb|ru|groovy|cs|c|cpp|h)([:][0-9]+)"
+        }
+    ]
 }
